@@ -87,18 +87,23 @@ const guestList = ['Matteo', 'Gennaro', 'Enrico', 'Astrid', 'Joshua'];
 
 
 if (guestList.indexOf(userName) >= 0) {
-    document.querySelector('.snack_4').innerHTML = ('Ingresso consentito, buona serata!');
+    document.querySelector('.snack_4').innerHTML = 'Ingresso consentito, buona serata!';
 
 } else {
-    document.querySelector('.snack_4').innerHTML = ('Spiacente ma non sei nella lista, alza i tacchi');
+    document.querySelector('.snack_4').innerHTML = 'Spiacente ma non sei nella lista, alza i tacchi';
 }
  */
 
 
 
 /* Snack 5: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array. */
-const array = [];
+/* let array = [];
 for (let index = 0; index < 6; index++) {
     const userNumber = parseInt(prompt('Inserisci un numero'));
+    if (userNumber % 2 != 0) {
+        array.push(userNumber)
+    } else {
 
+    }
 }
+document.querySelector('.snack_5').innerHTML = 'Nel tuo array ci sono i numeri dispari: ' + array; */
