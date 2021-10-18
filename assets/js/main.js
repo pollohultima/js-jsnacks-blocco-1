@@ -24,6 +24,8 @@ if (firstNumber > secondNumber) {
     document.querySelector('.snack_1').innerHTML = 'I numeri selezionati sono pari';
 } */
 
+
+
 //Snack 2: L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
 /*
 STRUMENTI
@@ -51,6 +53,8 @@ if (firstWord.length > secondWord.length) {
     document.querySelector('.snack_2').innerHTML = 'La parole hanno la stessa lunghezza';
 } */
 
+
+
 //Snack 3: Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
 /*
 STRUMENTI
@@ -63,11 +67,38 @@ STRUMENTI
 */
 
 //Dichiaro la variabile somma fuori dal ciclo per farci riferimento anche al di fuori del ciclo
-let sommaNum = 0;
+/* let sommaNum = 0;
 
 for (let index = 0; index < 10; index++) {
     const userNumber = parseInt(prompt('Inserisci un numero'));
     sommaNum += userNumber;
 }
-document.querySelector('.snack_3').innerHTML = 'La somma dei numeri inseriti è: ' + sommaNum;
+document.querySelector('.snack_3').innerHTML = 'La somma dei numeri inseriti è: ' + sommaNum; */
 
+
+
+/* Snack 4:
+In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby,
+chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+*/
+
+/* const userName = prompt('Inserisci la tuo nome');
+const guestList = ['Matteo', 'Gennaro', 'Enrico', 'Astrid', 'Joshua'];
+
+
+if (guestList.indexOf(userName) >= 0) {
+    document.querySelector('.snack_4').innerHTML = ('Ingresso consentito, buona serata!');
+
+} else {
+    document.querySelector('.snack_4').innerHTML = ('Spiacente ma non sei nella lista, alza i tacchi');
+}
+ */
+
+
+
+/* Snack 5: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array. */
+const array = [];
+for (let index = 0; index < 6; index++) {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+
+}
