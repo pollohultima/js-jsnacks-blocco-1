@@ -62,12 +62,12 @@ STRUMENTI
 -querySelector
 */
 
+//Dichiaro la variabile somma fuori dal ciclo per farci riferimento anche al di fuori del ciclo
+let sommaNum = 0;
+
 for (let index = 0; index < 10; index++) {
-    let userNumber = parseInt(prompt('Inserisci un numero'));
-    userNumber += userNumber
-    console.log(userNumber);
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    sommaNum += userNumber;
 }
-
-
-
+document.querySelector('.snack_3').innerHTML = 'La somma dei numeri inseriti è: ' + sommaNum;
 
