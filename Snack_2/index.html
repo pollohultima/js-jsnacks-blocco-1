@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!-- Snack 2 -->
+        <h2>Snack 2</h2>
+        <div class="snack_2"></div>
+        <div class="snack_2short"></div>
+        <div class="snack_2long"></div>
+
+
+        <script>
+//Snack 2: L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
+/*
+STRUMENTI
+
+-length
+-prompt
+-console.log
+-if
+-querySelector
+*/
+
+let firstWord = prompt('Inserisci la prima parola')
+console.log(firstWord.length);
+
+let secondWord = prompt('Inserisci la seconda parola')
+console.log(secondWord.length);
+
+if (firstWord.length > secondWord.length) {
+    document.querySelector('.snack_2short').innerHTML = 'La parole più corta è: ' + secondWord;
+    document.querySelector('.snack_2long').innerHTML = 'La parole più lunga è: ' + firstWord;
+} else if (firstWord.length < secondWord.length) {
+    document.querySelector('.snack_2short').innerHTML = 'La parole più corta è: ' + firstWord;
+    document.querySelector('.snack_2long').innerHTML = 'La parole più lunga è: ' + secondWord;
+} else {
+    document.querySelector('.snack_2').innerHTML = 'La parole hanno la stessa lunghezza';
+}
+
+    </script>
+    </body>
+</html>

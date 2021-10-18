@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!-- Snack 1 -->
+        <h2>Snack 1</h2>
+        <div class="snack_1"></div>
+
+        <script>
+//Snack 1: l'utente inserisce 2 numeri in successione e visualizzo a schermo il maggiore
+/*
+STRUMENTI
+
+-parseInt
+-prompt
+-console.log
+-if
+-querySelector
+*/
+
+let firstNumber = parseInt(prompt('Inserisci il primo numero'));
+console.log(firstNumber);
+
+let secondNumber = parseInt(prompt('Inserisci il secondo numero'));
+console.log(secondNumber);
+
+if (firstNumber > secondNumber) {
+    document.querySelector('.snack_1').innerHTML = 'Il numero maggiore è il primo: ' + firstNumber;
+
+} else if (secondNumber > firstNumber) {
+    document.querySelector('.snack_1').innerHTML = 'Il numero maggiore è il secondo: ' + secondNumber;
+} else {
+    document.querySelector('.snack_1').innerHTML = 'I numeri selezionati sono pari';
+}
+
+    </script>
+    </body>
+</html>

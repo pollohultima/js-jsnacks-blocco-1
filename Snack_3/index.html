@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!-- Snack 3 -->
+        <h2>Snack 3</h2>
+        <div class="snack_3"></div>
+
+
+        <script>
+//Snack 3: Il software deve chiedere per 10 volte all’utente di inserire un numero. Il programma stampa la somma di tutti i numeri inseriti.
+/*
+STRUMENTI
+
+-parseInt
+-prompt
+-console.log
+-for
+-querySelector
+*/
+
+//Dichiaro la variabile somma fuori dal ciclo per farci riferimento anche al di fuori del ciclo
+let sommaNum = 0;
+
+for (let index = 0; index < 10; index++) {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    sommaNum += userNumber;
+}
+document.querySelector('.snack_3').innerHTML = 'La somma dei numeri inseriti è: ' + sommaNum;
+
+    </script>
+    </body>
+</html>

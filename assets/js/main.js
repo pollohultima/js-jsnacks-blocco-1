@@ -126,10 +126,15 @@ document.querySelector('.snack_6').innerHTML = 'I cubi dei numeri fra 0 e ' + us
 /*
 Snack 7: Stampa le potenze di 2 fino a 1000.
 */
+let extract = []
 for (let index = 1; index < 10; index++) {
     let powa = Math.pow(2, index);
-    console.log(powa);
+    extract.push(powa);
+
 }
+document.querySelector('.snack_7').innerHTML = 'La somma delle potenze di 2 fino a 1000: ' + extract;
+
+
 
 /* Snack 8: Chiedi un numero di 4 cifre all’utente
 e calcola la somma di tutte le cifre che compongono il numero.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!-- Snack 4 -->
+        <h2>Snack 4</h2>
+        <div class="snack_4"></div>
+
+        <script>
+/* Snack 4:
+In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby,
+chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+*/
+
+const userName = prompt('Inserisci la tuo nome');
+const guestList = ['Matteo', 'Gennaro', 'Enrico', 'Astrid', 'Joshua'];
+
+
+if (guestList.indexOf(userName) >= 0) {
+    document.querySelector('.snack_4').innerHTML = 'Ingresso consentito, buona serata!';
+
+} else {
+    document.querySelector('.snack_4').innerHTML = 'Spiacente ma non sei nella lista, alza i tacchi';
+}
+
+
+    </script>
+    </body>
+</html>

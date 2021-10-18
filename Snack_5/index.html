@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!-- Snack 5 -->
+        <h2>Snack 5</h2>
+        <div class="snack_5"></div>
+        <div class="snack_5even"></div>
+
+        <script>
+/* Snack 5: Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array. */
+let array = [];
+for (let index = 0; index < 6; index++) {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    if (userNumber % 2 != 0) {
+        array.push(userNumber)
+    } else {
+
+    }
+}
+document.querySelector('.snack_5').innerHTML = 'Nel tuo array ci sono i numeri dispari: ' + array;
+    </script>
+    </body>
+</html>

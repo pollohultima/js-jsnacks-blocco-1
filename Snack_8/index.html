@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!-- Snack 8 -->
+        <h2>Snack 8</h2>
+        <div class="snack_8"></div>
+
+        <script>
+/* Snack 8: Chiedi un numero di 4 cifre all’utente
+e calcola la somma di tutte le cifre che compongono il numero.
+ */
+const userNumbers = prompt('Inserisci un numero di 4 cifre');
+
+let somDigit = 0
+for (let index = 0; index < 4; index++) {
+    const digit = parseInt(userNumbers.charAt(index));
+    somDigit += digit;
+}
+document.querySelector('.snack_8').innerHTML = 'La somma dei numeri digitati è: ' + somDigit;
+
+    </script>
+    </body>
+</html>

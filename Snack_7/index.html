@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!--Snack 7 -->
+        <h2>Snack 7</h2>
+        <div class="snack_7"></div>
+
+        <script>
+/*
+Snack 7: Stampa le potenze di 2 fino a 1000.
+*/
+let extract = []
+for (let index = 1; index < 10; index++) {
+    let powa = Math.pow(2, index);
+    extract.push(powa);
+    
+}
+document.querySelector('.snack_7').innerHTML = 'La somma delle potenze di 2 fino a 1000: ' + extract;
+    </script>
+    </body>
+</html>

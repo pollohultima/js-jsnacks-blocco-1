@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snack</title>
+    </head>
+    <body>
+        <!-- Snack 6 -->
+        <h2>Snack 6</h2>
+        <div class="snack_6"></div>
+
+        <script>
+/*
+Snack 6: Stampa il cubo dei primi N numeri,
+dove N è un numero indicato dall’utente.
+ */
+const userElevated = []
+const userNum = parseInt(prompt('Inserisci un numero'))
+
+for (let index = 1; index < userNum; index++) {
+    let elevated = Math.pow(index, 3)
+    userElevated.push(elevated)
+}
+document.querySelector('.snack_6').innerHTML = 'I cubi dei numeri fra 0 e ' + userNum + ' sono: ' + userElevated;
+
+    </script>
+    </body>
+</html>
